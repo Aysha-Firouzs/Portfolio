@@ -29,7 +29,7 @@ body
      color:#fff;
      padding-top:0;
      background-color: black;
-     border: 1px solid red;
+     /* border: 1px solid red; */
      height: 65vh;
      position: relative;
 }
@@ -37,7 +37,7 @@ body
 #Home img{
     position: absolute;
     bottom: 0;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 #Home div p {
