@@ -9,12 +9,16 @@
 		 <link href="Demo.css" rel="stylesheet" type="text/css">
 		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		 <script src="https://kit.fontawesome.com/d2c2ffe33f.js" crossorigin="anonymous"></script>
 		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		 <link rel="stylesheet" hrefhttps://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 		 <title>Aysh</title>
 	 </head>	
      
      <body>
+		 
+		 
 	     <section id="nav-bar">
 			 <nav class="navbar navbar-expand-lg navbar-light ">
 				 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +38,7 @@
 						 <li class="nav-item">
 							 <a class="nav-link" href="#Contact">Contact</a>
 						 </li>
+						 
 					 </ul>
 				 </div>	 
 			 </nav>
@@ -42,14 +47,15 @@
 		 <!-------------------Home section----------------->
 		 
 		 <section id ="Home">
+				<img src="FOOTER.png" class="bottom-img">
 		     <div class="container">
 			     
-				 <p class="main-title">Hello!!<br>I'm Aysha Firouzs</br></p>
+				 <p class="main-title animated bounce">Hello!!<br>I'm Aysha Firouzs</br></p>
 			
 			
              </div>
 			 
-			 <img src="foot.jpg"class="bottom-img">
+			 
 			 
 			
          </section>
@@ -75,27 +81,8 @@
 					 <h1>Skills</h1>
 					 
 					 <div class="container">
-             
-             <div class="progress">
-                 <div class="progress-bar progress-bar-striped" style="width:30%"></div>
-             </div>
-             <br>
-             <div class="progress">
-                 <div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
-             </div>
-             <br>
-             <div class="progress">
-                 <div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
-             </div>
-             <br>
-             <div class="progress">
-                 <div class="progress-bar bg-warning progress-bar-striped" style="width:60%"></div>
-             </div>
-             <br>
-             <div class="progress">
-                 <div class="progress-bar bg-danger progress-bar-striped" style="width:70%"></div>
-             </div>
-         </div>
+                        
+                     </div>
 					 
                  </div>
              </div>
@@ -106,17 +93,33 @@
          <section id="Contact">
 		      <div class="container ">
 					 <h1>Contact</h1>
-					 <p>I’m a dedicated, organized and methodical individual with good interpersonal skills and I’m an
-					 excellent smart team worker. I’m very keen in learning and developing new skills. I’m reliable
-					 and often seek new responsibilities within a wide range of employment areas. My career
-					 objective is to build career in a well reputed organization, where I can get the opportunity to
-					 prove my abilities by accepting challenges, fulfilling the organizational goals.</p>
+					 <p></p>
                  </div>
              </div>
-         </section>				 
+		 </section>	
+         
 		 
-		 
-		  
-		 
+		 <footer style =" background-color:black; padding-top:25px; padding-bottom:20px;">
+				<p align="center"style="color:#F9F9F9">© 2019 | ALL RIGHTS RESERVED</p>
+		  </footer>	 
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		  <script>
+			  var wow = new WOW(
+                {
+             boxClass:     'wow',      // animated element css class (default is wow)
+             animateClass: 'animated', // animation css class (default is animated)
+             offset:       0,          // distance to the element when triggering the animation (default is 0)
+                mobile:       true,       // trigger animations on mobile devices (default is true)
+             live:         true,       // act on asynchronously loaded content (default is true)
+               callback:     function(box) {
+               // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+               resetAnimation: true,     // reset animation on end (default is true)
+               }
+                );
+             wow.init();
+		  </script>
 	 </body>	 	 
 </html>		 

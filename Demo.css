@@ -25,9 +25,24 @@ body
 
 #Home
 {
-     background-image: linear-gradient(to right,black,black);
+     /* background-image: linear-gradient(to right,black,black); */
      color:#fff;
-     padding-top:5%;
+     padding-top:0;
+     background-color: black;
+     height: 65vh;
+     position: relative;
+}
+
+#Home img{
+    position: absolute;
+    bottom: 0;
+    /* border: 2px solid red; */
+}
+
+#Home div p {
+    position: absolute;
+    top: 12%;
+    left: 37%;
 }
 .main-title
 {
@@ -54,8 +69,8 @@ body
 }
 .container h1
 {
-    padding:5px;
-    margin-top:25px;
+    padding:25px;
+    margin-top:10px;
     text-transform:uppercase;
     color:blue;
     font-family: arial verdana;
@@ -70,7 +85,7 @@ body
     padding-top:50px;
     padding-bottom:50px;
     text-align:center;
-    background:#e8e1e1
+    background-image: linear-gradient(to right,#030303,#d5e1eb);
     
 }
 
@@ -82,6 +97,6 @@ body
     padding-top:50px;
     padding-bottom:50px;
     text-align:center;
-    background:white
+    background:white;
     
 }
