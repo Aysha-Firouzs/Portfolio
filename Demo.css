@@ -29,6 +29,7 @@ body
      color:#fff;
      padding-top:0;
      background-color: black;
+     border: 1px solid red;
      height: 65vh;
      position: relative;
 }
@@ -36,20 +37,19 @@ body
 #Home img{
     position: absolute;
     bottom: 0;
-    /* border: 2px solid red; */
+    border: 2px solid green;
 }
 
 #Home div p {
-    position: absolute;
-    top: 12%;
-    left: 37%;
+    
 }
 .main-title
 {
-     font-size:40px;
+     font-size:3vw;
      font-weight:600;
-     margin-top:100px;
-     text-align:center;
+     /* margin-top:100px; */
+     padding-top: 25vh; 
+     text-align:center; 
      color:#C0C0C0;
      
      
@@ -100,3 +100,19 @@ body
     background:white;
     
 }
+/* Tablets */
+@media only screen and (max-width: 768px){
+
+    .main-title {
+        font-size: 35px;
+    }
+}
+/* Phones */
+@media only screen and (max-width: 480px){
+
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+
