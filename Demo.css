@@ -2,23 +2,68 @@
 {
    margin: 0;
    padding: 0;
+  
 }
-body 
+body , html
 {
-  font-family:sans-serif;
+  font-family: 'Trocchi', serif;
+  scroll-behavior: smooth; 
+  
+
 }
 #nav-bar
 {
    position:sticky;
    top:0;
    z-index:10;
+   color: #000;
    
 }
 .navbar
 {
-   background-image: linear-gradient(to right,#d5e1eb,#030303);
+   background-image: linear-gradient(to right,crimson,#030303);
    padding:0 !important;
-     
+   font-size: 105%;
+   font-weight: bold;
+   
+}
+
+.navbar a:hover 
+{
+    color:black;
+}
+.navbar a::before
+{
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color:black;
+}
+
+.nav-link
+{
+    transition: 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.nav-link:hover
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 6px 0; 
+}
+
+.navbar a:hover::before 
+{
+    right: 0;
+    left: 0;
 }
 
 /*----------Home section----------*/
@@ -28,35 +73,35 @@ body
      /* background-image: linear-gradient(to right,black,black); */
      color:#fff;
      padding-top:0;
-     background-color: black;
+     background-image: linear-gradient(to top,rgb(0, 0, 0),crimson);
      /* border: 1px solid red; */
      height: 65vh;
      position: relative;
 }
 
 #Home img{
-    position: absolute;
-    bottom: 0;
+  
     /* border: 2px solid green; */
 }
 
-#Home div p {
-    
-}
+
 .main-title
 {
-     font-size:3vw;
-     font-weight:600;
-     /* margin-top:100px; */
-     padding-top: 25vh; 
-     text-align:center; 
-     color:#C0C0C0;
+    font-size:3.5vw;
+    font-weight:600;
+    /* margin-top:100px; */
+    padding-top: 20vh; 
+    text-align:center; 
+    color: silver;
+    font-family: comic sans ms;
      
      
 }
 .bottom-img
 {
     width:100%;
+    position: absolute;
+    bottom: 0;
 }
 /*----------About section----------*/
 
@@ -64,16 +109,28 @@ body
 {
    padding:80px; 
    text-align:center;
-   background:
+  
    
+}
+
+
+#About p
+{
+    color:black;
+    font-size: 120%;
+    font-weight: 700;
+    padding-top: 30px;
+    
 }
 .container h1
 {
     padding:25px;
     margin-top:10px;
     text-transform:uppercase;
-    color:blue;
-    font-family: arial verdana;
+    color:crimson;
+    font-weight: bold;
+    
+     
     
 }
 
@@ -85,7 +142,6 @@ body
     padding-top:50px;
     padding-bottom:50px;
     text-align:center;
-    background-image: linear-gradient(to right,#030303,#d5e1eb);
     
 }
 
@@ -100,6 +156,74 @@ body
     background:white;
     
 }
+
+.mail
+{
+   padding-top: 10%;
+   color: black;
+   font-weight: 600;
+}
+
+.address
+{
+    padding-top: 10%;
+    color: black;
+    font-weight: 600;
+}
+
+.number
+{
+    padding-top: 10%;
+    color: black;
+    font-weight: 600;
+}
+
+.ed
+{
+    padding-top: 12%;
+    font-weight: 900;   
+    font-size: 130%;
+    color: black;
+}
+
+.ad
+{
+    padding-top: 20%;
+    font-weight: 900;
+    font-size: 130%;
+    color: black;
+}
+
+.cn
+{
+    padding-top: 20%;
+    font-weight: 900;
+    font-size: 130%;
+    color: black;
+}
+
+.card-deck
+{
+    padding-top: 10px;
+}
+
+/*----------Footer section----------*/
+.footer
+{
+    background-image: linear-gradient(to bottom,crimson,#030303);
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+}
+
+.footer p
+{
+    color:black;
+    font-weight: 700;
+    text-align: center;
+}
+
+
 /* Tablets */
 @media only screen and (max-width: 768px){
 
@@ -114,5 +238,8 @@ body
         font-size: 20px;
     }
 }
+
+
+
 
 
