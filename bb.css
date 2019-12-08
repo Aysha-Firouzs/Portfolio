@@ -1,0 +1,552 @@
+*
+{
+   margin: 0;
+   padding: 0;
+  
+}
+
+body , html
+{
+  font-family: 'Trocchi', serif;
+  scroll-behavior: smooth; 
+
+}
+
+#nav-bar
+{
+   position:sticky;
+   top:0;
+   z-index:10;
+   color: #000;
+   
+}
+.navbar
+{
+   background-image: linear-gradient(to right,silver,black);
+   padding:0 !important;
+   font-size: 105%;
+   font-weight: bold;
+   
+}
+
+.navbar a:hover 
+{
+    color:black;
+}
+.navbar a::before
+{
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color:black;
+}
+
+.nav-link
+{
+    transition: 0.3s ease;
+    text-decoration: none;
+    padding: 20px 0;
+    margin: 0 20px;
+    
+}
+
+.nav-link:hover
+{
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    padding: 6px 0; 
+}
+
+.navbar a:hover::before 
+{
+    right: 0;
+    left: 0;
+}
+
+/*----------Home section----------*/
+
+#Home
+{
+    color:#fff;
+    padding-top:0;   
+    padding-bottom: 50%;
+    height: 85vh;
+    position: relative;
+}
+
+
+.main-title
+{
+    font-size:3.5vw;
+    font-weight:600;
+    padding-top: 35vh; 
+    text-align:center; 
+    color: gold;
+    font-family:  'Bree Serif', serif;
+    overflow: hidden; 
+    border-right: .15em ; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+     
+}
+
+.quote
+{
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'Bree Serif', serif;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    margin: 0 auto;
+    letter-spacing: .15em;
+    /* animation: 
+    typing 3.5s steps(40,end),
+    blink-caret .75s step-end infinite; */
+}
+@keyframes typing 
+{
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  
+  @keyframes blink-caret
+{
+    from, to { border-color: transparent }
+}
+
+.glitch-effect
+{
+    position: relative;
+    text-transform: uppercase;
+    color: violet;
+    letter-spacing: 10px;
+}
+.glitch-effect::before, .glitch-effect::after
+{
+    content: 'asna';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+.glitch-effect::before
+{
+    color: tomato;
+    z-index: -1;
+    animation: effect .3s ease infinite;
+
+}
+
+.glitch-effect::after
+{
+    color: springgreen;
+    z-index: -2;
+    animation:  effect .3s reverse ease infinite;
+
+}
+
+@keyframes effect 
+{
+    0% {transform:translate(0)}
+    20% { transform:translate(-3px,3px) }
+    40% { transform:translate(-3px,3px)}
+    60% { transform:translate(3px,3px)}
+    80% { transform:translate(3px,-3px)}
+    100% {transform:translate(0)}
+}
+video 
+{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Tablets */
+@media only screen and (max-width: 768px){
+
+    .main-title {
+        font-size: 35px;
+    }
+
+    .bottom {
+        font-size: 20px;
+        padding-top: 17vh;
+    }
+}
+/* Phones */
+@media only screen and (max-width: 480px){
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .bottom {
+        font-size: 20px;
+        
+    }
+    .quote
+    {
+        font-size: 20px;
+    }
+}
+
+/*----------About section----------*/
+
+#About
+{
+   padding:80px; 
+   text-align:center;
+   padding: 10px;
+   
+   
+}
+
+
+#About p
+{
+    color:gold;
+    font-size: 120%;
+    font-weight: 700;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 5px 10px 20px silver inset;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+    
+    
+    
+}
+
+.container h1
+{
+    /* padding:25px; */
+    margin-top:10px;
+    text-transform:uppercase;
+    color:silver;
+    font-weight: bold;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    
+     
+    
+}
+
+.block {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/*----------Skills section----------*/
+
+
+#Skills
+{
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align:center;
+    
+}
+
+.css
+{
+    height: 50%;
+    width: 50%;
+    height: auto;
+}
+
+.html5
+{
+    height: 50%;
+    width: 50%;
+    height: auto;
+}
+
+.boot
+{
+    height: 110%;
+    width: 60%;
+    color: gold;
+    /* height: auto; */
+}
+
+.js
+{
+    height: 130%;
+    width: 50%;
+    height: auto;
+}
+
+/*----------Education section----------*/
+
+#Education
+{
+    text-align: center;
+}
+
+#Education p
+{
+    color:gold;
+    font-size: 120%;
+    font-weight: 700;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 5px 10px 20px silver inset;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+
+/* .flip-box
+{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(180deg);
+}
+ */
+
+/*----------MyWorks section----------*/
+
+#MyWorks
+{
+    text-align: center;
+}
+
+
+
+/*----------Contact section----------*/
+
+
+#Contact
+{
+    padding-top:50px;
+    padding-bottom:70px;
+    text-align:center;
+    margin: 0 15px 0;
+    
+}
+
+.mail
+{
+   padding-top: 10%;
+   color: black;
+   font-weight: 600;
+   
+}
+
+
+.mail:hover
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 6px 0;  
+	
+}
+
+.address
+{
+    padding-top: 10%;
+    color: black;
+    font-weight: 600;
+}
+.address:hover
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 6px 0; 
+}
+
+.number
+{
+    padding-top: 10%;
+    color: black;
+    font-weight: 600;
+}
+.number:hover
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 6px 0; 
+}
+
+.ed
+{
+    padding-top: 12%;
+    font-weight: 900;   
+    font-size: 130%;
+    color: black;
+}
+
+.ad
+{
+    padding-top: 20%;
+    font-weight: 900;
+    font-size: 130%;
+    color: black;
+}
+
+.cn
+{
+    padding-top: 20%;
+    font-weight: 900;
+    font-size: 130%;
+    color: black;
+}
+
+.card-deck
+{
+    padding-top: 10px;
+    margin: 0 15px 0;
+}
+
+/*------------Social Media----------*/
+
+.Social
+{
+    width: 200px;
+    height: calc((200px / 46) * 53);
+    
+}
+
+#social-media
+{
+    padding: 100px 0;
+    
+}
+
+#social-media p
+{
+    font-size: 35px;
+    font-weight: 600;
+ 
+    margin-top:10px;
+    text-transform:uppercase;
+    color:silver;
+    font-weight: bold;
+    padding-bottom: 8%;
+    padding-top: 10%;
+    
+}
+
+#social-media li 
+{
+    display: inline-block;
+}
+
+#social-media ul 
+{
+    text-align: center;
+}
+
+.Social:hover 
+{
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes shake
+{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    /* 30% { transform: translate(3px, 2px) rotate(0deg); } */
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/*----------Footer section----------*/
+
+
+.footer
+{
+    color: #fff;
+    padding-top: 0;
+    margin: 0;
+    padding: 0;
+    height: 35vh;
+    position: relative;
+}
+
+
+.bottom
+{
+    
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding-top: 20vh;
+    text-align: center;
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
